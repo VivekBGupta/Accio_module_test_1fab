@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background: black; */
+}
+
+.background {
+    /* background: url(car.png) no-repeat;
+    background-size: cover; */
+    width: 100vw;
+    background-position: center;
+    background-size: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.39), rgba(0, 0, 0, 0.39));
+    height: 100vh;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.gallery {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 70px 60px;
+    /* background: rgb(0, 0, 0); */
+}
+
+#image_1,
+#image_2,
+#image_3,
+#image_4 {
+    margin-left: 40px;
+    height: 600px;
+    width: 300px;
+    background-image: cover;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.628);
+    border: 3px solid rgb(121, 107, 107);
+    cursor: pointer;
+}
+
+#form {
+    display: none;
+    height: 500px;
+    width: 280px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    top: 370px;
+    left: 253px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 3px solid rgb(255, 111, 111);
+    background-color: rgba(255, 127, 80, 0.441);
+    border-radius: 20px;
+}
+
+#form .input {
+    font-size: 15px;
+    padding: 10px 0px 10px 30px;
+    width: 230px;
+    margin: 15px 5px;
+    background-color: rgba(255, 255, 255, 0.671);
+    border: 1px solid coral;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#form h1 {
+    font-size: 40px;
+    margin: 40px 70px;
+    color: rgb(255, 255, 255);
+}
+
+#form #button {
+    font-size: 20px;
+    padding: 3px 25px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: rgba(0, 0, 0, 0.411);
+    color: rgb(255, 255, 255);
+    margin: 30px 70px;
+
+}
+
+#form #button:hover {
+    color: rgb(234, 72, 3);
+    background: white;
+}
+
+#data {
+    display: none;
+    height: 500px;
+    width: 280px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    top: 370px;
+    left: 596px;
+    background-color: rgba(255, 0, 0, 0.393);
+    border: 3px solid rgb(255, 58, 58);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#data h1 {
+    font-size: 40px;
+    color: white;
+    margin: 40px 70px;
+}
+
+#data p {
+    margin: 100px 20px;
+    color: white;
+    font-size: 20px;
+}
+
+#dice {
+    display: none;
+    height: 500px;
+    width: 280px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    top: 370px;
+    left: 940px;
+    background-color: rgba(255, 127, 80, 0.441);
+    border: 3px solid rgb(255, 58, 58);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#dice #image {
+    cursor: pointer;
+    margin: 40px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+
+#dice p {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    /* margin-left: 40px; */
+    margin-top: 20px;
+}
+
+#random {
+    display: none;
+    height: 500px;
+    width: 280px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    top: 370px;
+    left: 1286px;
+    background-color: rgba(127, 255, 80, 0.226);
+    border: 3px solid rgb(40, 108, 1);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+}
+
+#random p {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 200px;
+}
+
+#bad-luck {
+    display: none;
+    position: absolute;
+    border: 5px solid red;
+    height: 200px;
+    width: 700px;
+    top: 150px;
+    left: 405px;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 100px;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.758);
+    color: white;
+}
+
+#congrats {
+    display: none;
+    position: absolute;
+    top: 66px;
+    height: 600px;
+    left: 100px;
+    width: 1330px;
+    border: 5px solid black;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.612);
+}
+
+#congrats div {
+    margin: 0 250px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.317);
+}
+
+#congrats img {
+    height: 250px;
+    margin: 35px;
+    border-radius: 10px;
+}
+
+#congrats p,
+h1 {
+    margin: 40px;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun To Play</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="./tree.mp4" type="video/mp4">
+        </video>
+    <div class="gallery">
+        <img id="image_1" src="./image1.jpg" alt="image_1">
+        <img id="image_2" src="./image2.jpg" alt="image_1">
+        <img id="image_3"
+            src="./image3.jpg"
+            alt="image_1">
+        <img id="image_4" src="./image4.jpg"
+            alt="image_1">
+    </div>
+</div>
+    <div id="form">
+        <form>
+            <h1>Register</h1>
+            <input type="text" class="input" id="name" name="name" placeholder="Name" required><br><br>
+            <input type="email" class="input" id="email" name="email" placeholder="Email" required><br><br>
+            <input type="text" class="input" id="username" name="username" placeholder="Username" required><br><br>
+            <input type="submit" id="button" value="Submit">
+        </form>
+    </div>
+
+    <div id="data">
+        <h1>UserData</h1>
+        <p>Name - <span id="data-name"></span></p>
+        <p>Username - <span id="data-username"></span></p>
+    </div>
+
+    <div id="dice">
+        <img id="image" src="./dice.jpg" alt="Dice">
+        <p>Score</p>
+        <p id="score"></p>
+        <br>
+        <p id="error"></p>
+    </div>
+
+    <div id="bad-luck">
+        <p> BAD LUCK</p>
+        <p> Reload Page to Play More</p>
+    </div>
+
+    <div id="random">
+        <p>Click here to Generate Coupon Number</p>
+    </div>
+
+    <div id="congrats">
+        <h1>Coupon Number</h1>
+        <p id="Rnumber"></p>
+        <div>
+            <img src="./congrates.jpg" alt="congractulation">
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
